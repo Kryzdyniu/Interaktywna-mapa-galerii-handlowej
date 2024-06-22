@@ -1,0 +1,211 @@
+.content-container{
+    position: relative;
+}
+
+.map-container {
+    position: relative;
+    z-index: 1;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.map-container.active {
+    opacity: 1;
+}
+
+.menu-container {
+    position: absolute;
+    top: 0;
+    right: 270px;
+    z-index: 2;
+    width: 200px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+  }
+
+.menu-category {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-category li {
+    padding: 10px;
+    color: white;
+    margin-bottom: 2px;
+    border: black solid 3px;
+}
+
+.menu-category li:hover {
+    opacity: 0.9;
+}
+
+.menu-category li:nth-child(1) { background-color: #D3B1F4; }
+.menu-category li:nth-child(2) { background-color: #FFE201; }
+.menu-category li:nth-child(3) { background-color: #17B0EF; }
+.menu-category li:nth-child(4) { background-color: #006F2F; }
+.menu-category li:nth-child(5) { background-color: #BD1220; }
+.menu-category li:nth-child(6) { background-color: #745A32; }
+.menu-category li:nth-child(7) { background-color: #006AB3; }
+.menu-category li:nth-child(8) { background-color: #FF8400; }
+.menu-category li:nth-child(9) { background-color: #F18F8E; }
+.menu-category li:nth-child(10) { background-color: #96BF1B; }
+.menu-category li:nth-child(11) { background-color: #CCCCCC; }
+
+
+svg path {
+    fill: none;
+    stroke: none;
+    transition: fill 0.5s ease;
+}
+
+#tooltip {
+    position: absolute;
+    background-color: white;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+    pointer-events: none;
+    z-index: 1000;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#tooltip img {
+    max-width: 100%;
+}
+
+svg image[data-tooltip]:hover:after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 100%;
+    top: 0;
+    white-space: nowrap;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+#path1, #path2, #path5, #path6, #poziom0path1, #poziom0path2, #poziom0path4, #poziom0path12, #poziom0path19, #poziom0path30 {
+    fill: #f18e8cff;
+}
+
+#path3, #path4{
+    fill: #16b0eeff;
+}
+
+#path7, #poziom0path11, #poziom0path13, #poziom0path14, #poziom0path15, #poziom0path32, #poziom0path44, #poziom1path6, #poziom1path15, #poziom1path22, #poziom1path24, #poziom1path26, #poziom1path30 {
+    fill: #97bd1fff;
+}
+
+#path8, #poziom0path9, #poziom0path16, #poziom0path23{
+    fill: #fe8400ff;
+}
+
+#path9 {
+    fill: #ccccccff;
+}
+
+#path1:hover, #path2:hover, #path5:hover, #path6:hover, #poziom0path1:hover, #poziom0path2:hover, #poziom0path4:hover, #poziom0path12:hover, #poziom0path19:hover, #poziom0path30:hover {
+    fill: rgb(243, 92, 89);
+    cursor: pointer;
+}
+
+#path3:hover, #path4:hover {
+    fill: rgb(0, 116, 161);
+    cursor: pointer;
+}
+
+#path7:hover, #poziom0path11:hover, #poziom0path13:hover, #poziom0path14:hover, #poziom0path15:hover, #poziom0path32:hover, #poziom0path44:hover, #poziom1path6:hover, #poziom1path15:hover, #poziom1path22:hover, #poziom1path24:hover, #poziom1path26:hover, #poziom1path30:hover {
+    fill: rgb(108, 139, 3);
+    cursor: pointer;
+}
+
+#path8:hover, #poziom0path9:hover, #poziom0path16:hover, #poziom0path23:hover {
+    fill: rgb(161, 83, 0);
+    cursor: pointer;
+}
+
+#path9:hover {
+    fill: rgb(143, 143, 143);
+    cursor: pointer;
+}
+
+#poziom0path8, #poziom1path1, #poziom1path4, #poziom1path20, #poziom1path25 {
+    fill: #006bb3ff;
+}
+
+#poziom0path3, #poziom0path25, #poziom0path31, #poziom0path42, #poziom1path17, #poziom1path18, #poziom1path19 {
+    fill: #00702eff;
+}
+
+#poziom0path10, #poziom0path17, #poziom0path20, #poziom0path22, #poziom0path24, #poziom0path26, #poziom0path34, #poziom0path35, #poziom0path36, #poziom0path38, #poziom0path39, #poziom0path41, #poziom0path47,
+#poziom1path8, #poziom1path9, #poziom1path10, #poziom1path12, #poziom1path16, #poziom1path28, #poziom1path29 {
+    fill: #bd1320ff;
+}
+
+#poziom0path6, #poziom0path7, #poziom0path18, #poziom0path33, 
+#poziom1path2, #poziom1path3, #poziom1path5, #poziom1path7, #poziom1path13, #poziom1path27 {
+    fill: #15b0ecff;
+}
+
+#poziom0path21, #poziom0path27, #poziom0path28, #poziom0path29, #poziom0path40, #poziom0path46,
+#poziom1path14, #poziom1path21 {
+    fill: #745931ff;
+}
+
+#poziom0path5, #poziom0path37, #poziom0path43, #poziom0path45 {
+    fill: #d3aff8ff;
+}
+
+#poziom1path11, #poziom1path23 {
+    fill: #fee102ff;
+}
+
+#poziom1path11:hover, #poziom1path23:hover {
+    fill: rgb(194, 171, 2);
+    cursor: pointer;
+}
+
+#poziom0path10:hover, #poziom0path17:hover, #poziom0path20:hover, #poziom0path22:hover, #poziom0path24:hover, #poziom0path26:hover, #poziom0path34:hover, #poziom0path35:hover, #poziom0path36:hover, #poziom0path38:hover, #poziom0path39:hover, #poziom0path41:hover, #poziom0path47:hover,
+#poziom1path8:hover, #poziom1path9:hover, #poziom1path10:hover, #poziom1path12:hover, #poziom1path16:hover, #poziom1path28:hover, #poziom1path29:hover {
+    fill: rgb(117, 13, 21);
+    cursor: pointer;
+}
+
+#poziom0path6:hover, #poziom0path7:hover, #poziom0path18:hover, #poziom0path33:hover, #poziom1path2:hover, #poziom1path3:hover, #poziom1path5:hover, #poziom1path7:hover, #poziom1path13:hover, #poziom1path27:hover {
+    fill: rgb(17, 124, 167);
+    cursor: pointer;
+}
+
+#poziom0path8:hover, #poziom1path1:hover, #poziom1path4:hover, #poziom1path20:hover, #poziom1path25:hover {
+    fill: rgb(0, 82, 136);
+    cursor: pointer;
+}
+
+#poziom0path3:hover, #poziom0path25:hover, #poziom0path31:hover, #poziom0path42:hover, #poziom1path17:hover, #poziom1path18:hover, #poziom1path19:hover {
+    fill: rgb(0, 85, 35);
+    cursor: pointer;
+}
+
+#poziom0path21:hover, #poziom0path27:hover, #poziom0path28:hover, #poziom0path29:hover, #poziom0path40:hover, #poziom0path46:hover,
+#poziom1path14:hover, #poziom1path21:hover {
+    fill: rgb(78, 59, 30);
+    cursor: pointer;
+}
+
+#poziom0path5:hover, #poziom0path37:hover, #poziom0path43:hover, #poziom0path45:hover {
+    fill: rgb(155, 124, 185);
+    cursor: pointer;
+}
+
+
+
