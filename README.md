@@ -20,7 +20,7 @@ Aby uruchomić aplikację lokalnie:
 1. Sklonuj repozytorium:
    ```bash
    git clone https://github.com/Kryzdyniu/Interaktywna-mapa-galerii-handlowej.git
-2. Otwórz plik index.html w przeglądarce
+2. Otwórz plik ZAI-Projekt.html w przeglądarce
 
 ## Użycie
 - **Wybór piętra**: Kliknij przyciski pięter, aby załadować plan odpowiedniego piętra.
