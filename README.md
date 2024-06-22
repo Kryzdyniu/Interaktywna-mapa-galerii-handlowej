@@ -26,6 +26,9 @@ Aby uruchomić aplikację lokalnie:
 - **Wybór piętra**: Kliknij przyciski pięter, aby załadować plan odpowiedniego piętra.
 - **Wyświetlanie szczegółów**: Najedź kursorem na część mapy, aby wyświetlić szczegółowe informacje o każdym obszarze.
 
+![image](https://github.com/Kryzdyniu/Interaktywna-mapa-galerii-handlowej/assets/173569908/a0f909e7-c004-46bc-839d-2f40a7936b80)
+
+
 ## Licencja
 MIT License
 
